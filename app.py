@@ -23,7 +23,7 @@ def index():
                'image_path': image_path,
 
             }
-            return render_template('show.html')
+            return render_template('show.html', result=result)
 
 
     return render_template('index.html')
