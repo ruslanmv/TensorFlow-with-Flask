@@ -3,6 +3,7 @@ from flask_bootstrap import Bootstrap
 
 import os
 import inference
+
 app = Flask(__name__)
 Bootstrap(app)
 
@@ -21,11 +22,8 @@ def index():
             result = {
                'class_name': class_name,
                'image_path': image_path,
-
             }
             return render_template('show.html', result=result)
-
-
     return render_template('index.html')
 
 if __name__ == '__main__':

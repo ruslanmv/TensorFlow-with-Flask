@@ -23,7 +23,6 @@ def index():
             }
 
             return render_template('show.html', result=result)
-
     return render_template('index.html')
 
 if __name__ == '__main__':
