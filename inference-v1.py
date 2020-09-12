@@ -5,7 +5,7 @@ import requests
 
 SIZE=128
 MODEL_URI='http://localhost:8501/v1/models/pets:predict'
-CLASSES  =['Cat','Dog']
+
 def get_prediction(image_path):
     image = tf.keras.preprocessing.image.load_img(
        image_path, target_size=(SIZE, SIZE)
@@ -19,6 +19,6 @@ def get_prediction(image_path):
     })
     response = requests.post(MODEL_URI, data=data.encode())
     result = json.loads(response.text)
-    prediction = np.squeeze(result['predictions'][0])
-    class_name = CLASSES[int(prediction > 0.5)]
-    return class_name
+    print(result)
+
+get_prediction('dog.jpg')
