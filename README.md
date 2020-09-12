@@ -1,8 +1,7 @@
 ## Deploy Models with TensorFlow Serving and Flask
 If you want to run the code from the hands on project Deploy Models with TensorFlow Serving and Flask on your local machine, please follow the instructions given in this file.
 What's Included
-Following folders and files are included in this zip file:
-1. 2. 3. 4. 5.
+
 - TensorFlow SavedModel Directory
 - Empty directory which will be used for storing images by the flask app
 - HTML templates are here - Flask app
